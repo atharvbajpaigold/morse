@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharv's ''Morse Code Translator''</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <h1 id="heading">Morse Code Translator</h1>
+        
+        <div id="mainbox">
+            <textarea id="morsetext" class="input" placeholder="Type the morse code"></textarea>
+            <input id="normaltext" class="input" placeholder="Type the text"></input>
+        </div>
+        
+        <div id="infoButtons" style="margin-top: 20px;">
+            <button id="playMorseBtn">▶️ Play Morse Code</button>
+            <!-- <button onclick="window.location.assign('https://cdn.shopify.com/s/files/1/2223/4507/files/morse-chart_grande.png?v=1501447409')">.</button> -->
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+    <script>
+        function showInstructions() {
+            alert("📘 Morse Code Input Instructions:\n\n• Use no space between each letter.\n• Use 1 spaces between each word.\n\nExample:\n• To convert text to Morse code, just type in the Text field. It will automatically translate to Morse.");
+        }
+
+        function showHistory() {
+            alert("📜 History of Morse Code:\n\nMorse code was developed in the 1830s by Samuel Morse and Alfred Vail as a method of communication over telegraph lines. Each letter and number is represented by a sequence of dots (·) and dashes (-), which were originally transmitted as short and long electrical pulses. It became widely used in maritime communication and military operations before the rise of radio, telephones, and the internet. Though mostly obsolete today, it’s still recognized internationally and used in emergency signaling.");
+        }
+    </script>
+</body>
+</html>

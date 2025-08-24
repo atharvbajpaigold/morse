@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden; /* Allow vertical scrolling */
+    overflow-x: hidden;
+}
+#main {
+    align-items: center;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #70e1f5, #ffd194);
+    text-align: center;
+}
+#heading {
+    color: rgb(0, 0, 0);
+    font-size: 5vh;
+    padding-bottom: 7vh;
+}
+
+.input {
+  height: 40px; /* fixed height is safer */
+  width: 90%;
+  padding: 0.5vw 0.5vw; /* consistent units */
+  border-radius: 10px;
+  color: black;
+  font-size: 1rem;
+  outline: none;
+  border: 2px solid white;
+  box-shadow: 4px 1px 4px 1px rgba(0, 0, 0, 0.5);
+  overflow-x: auto;
+  white-space: nowrap;
+  place-content: center;
+  resize: none;
+}
+
+#mainbox {
+    margin: 5vh auto 2vh auto;
+    background: linear-gradient(90deg, rgb(163, 255, 201) 0%, rgb(255, 244, 149) 100%);
+    width: 80%;
+    height: 60%;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    border-radius: 15px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+    padding: 2vh;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+#infoButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#infoButtons button {
+    background-color: rgb(234, 255, 193);
+    color: black;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 2px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#infoButtons button:hover {
+    background-color: #d0f0b3; /* slightly darker green for hover */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+/* ✅ Speed dropdown styling */
+#infoButtons select {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgb(234, 255, 193);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#infoButtons select:hover {
+    background-color: #d0f0b3;
+    transform: scale(1.05);
+}
+
+/* @media (max-width: 500px) {
+    input {
+        font-size: 0.9rem;
+    }
+
+    #heading {
+        font-size: 4vh;
+    }
+
+    #infoButtons {
+        flex-direction: column;
+    }
+
+    #infoButtons button,
+    #infoButtons select {
+        font-size: 1rem;
+        width: 90%;
+    }
+} */
